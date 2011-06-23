@@ -1,0 +1,16 @@
+Plugin for Iamax topup API integration into rails application
+
+Add Iamax configuration file into your application config folder(ex. config/iamax.yml)
+
+You must add following Iamax details into your configuration file....
+
+rcode:          # Add rcode
+username:       # Iamax a/c username
+password:       # Iamax a/c password
+service_url:    # Iamax api url
+
+
+
+Usuage:
+
+TopupService::IamaxAdapter.new.process_topup(topup_amount, mobile_number)
